@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/swagger-test-templates.png?downloads=true)](https://www.npmjs.com/package/swagger-test-templates)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-swagger_test_templates_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-swagger-test-templates_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build..beta..travis-ci.org/apidoc.html)
 
 ![package-listing](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screen-capture.npmPackageListing.svg)
 
