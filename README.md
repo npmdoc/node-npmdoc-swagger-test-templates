@@ -1,11 +1,13 @@
-# api documentation for  [swagger-test-templates (v1.3.0)](https://github.com/apigee-127/swagger-test-templates#readme)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-swagger-test-templates.svg)](https://travis-ci.org/npmdoc/node-npmdoc-swagger-test-templates)
+# api documentation for  [swagger-test-templates (v1.3.0)](https://github.com/apigee-127/swagger-test-templates#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-swagger-test-templates.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-swagger-test-templates) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-swagger-test-templates.svg)](https://travis-ci.org/npmdoc/node-npmdoc-swagger-test-templates)
 #### Generate test code from a Swagger spec
 
 [![NPM](https://nodei.co/npm/swagger-test-templates.png?downloads=true)](https://www.npmjs.com/package/swagger-test-templates)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-swagger_test_templates_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-swagger-test-templates%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-swagger-test-templates/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
