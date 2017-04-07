@@ -1,0 +1,39 @@
+<svg height="574" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="574" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">12 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ swagger-test-templates@1.3.0 </tspan>
+<tspan x="10" y="90">  ├─┬ handlebars@3.0.3 </tspan>
+<tspan x="10" y="106">  │ ├─┬ optimist@0.6.1 </tspan>
+<tspan x="10" y="122">  │ │ ├── minimist@0.0.10 </tspan>
+<tspan x="10" y="138">  │ │ └── wordwrap@0.0.3 </tspan>
+<tspan x="10" y="154">  │ ├─┬ source-map@0.1.43 </tspan>
+<tspan x="10" y="170">  │ │ └── amdefine@1.0.1 </tspan>
+<tspan x="10" y="186">  │ └─┬ uglify-js@2.3.6 </tspan>
+<tspan x="10" y="202">  │   ├── async@0.2.10 </tspan>
+<tspan x="10" y="218">  │   └── optimist@0.3.7 </tspan>
+<tspan x="10" y="234">  ├─┬ json-schema-deref-sync@0.3.3 </tspan>
+<tspan x="10" y="250">  │ ├── clone@1.0.2 </tspan>
+<tspan x="10" y="266">  │ ├── dag-map@1.0.2 </tspan>
+<tspan x="10" y="282">  │ ├─┬ is-valid-path@0.1.1 </tspan>
+<tspan x="10" y="298">  │ │ └─┬ is-invalid-path@0.1.0 </tspan>
+<tspan x="10" y="314">  │ │   └─┬ is-glob@2.0.1 </tspan>
+<tspan x="10" y="330">  │ │     └── is-extglob@1.0.0 </tspan>
+<tspan x="10" y="346">  │ ├── lodash@4.17.4 </tspan>
+<tspan x="10" y="362">  │ ├─┬ md5@2.2.1 </tspan>
+<tspan x="10" y="378">  │ │ ├── charenc@0.0.2 </tspan>
+<tspan x="10" y="394">  │ │ ├── crypt@0.0.2 </tspan>
+<tspan x="10" y="410">  │ │ └── is-buffer@1.1.5 </tspan>
+<tspan x="10" y="426">  │ ├── memory-cache@0.1.6 </tspan>
+<tspan x="10" y="442">  │ ├── mpath@0.2.1 </tspan>
+<tspan x="10" y="458">  │ ├── traverse@0.6.6 </tspan>
+<tspan x="10" y="474">  │ └── valid-url@1.0.9 </tspan>
+<tspan x="10" y="490">  ├── lodash@3.10.1 </tspan>
+<tspan x="10" y="506">  ├─┬ sanitize-filename@1.6.1 </tspan>
+<tspan x="10" y="522">  │ └─┬ truncate-utf8-bytes@1.0.2 </tspan>
+<tspan x="10" y="538">  │   └── utf8-byte-length@1.0.4 </tspan>
+<tspan x="10" y="554">  └── string@3.3.3</tspan>
+</text>
+</svg>
