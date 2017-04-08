@@ -1,0 +1,499 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/apigee-127/swagger-test-templates#readme">swagger-test-templates (v1.3.0)</a>
+</h1>
+<h4>Generate test code from a Swagger spec</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swagger-test-templates">module swagger-test-templates</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.testGen">
+            function <span class="apidocSignatureSpan">swagger-test-templates.</span>testGen
+            <span class="apidocSignatureSpan">(swagger, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">swagger-test-templates.</span>helpers</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swagger-test-templates.helpers">module swagger-test-templates.helpers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.helpers.ifCond">
+            function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>ifCond
+            <span class="apidocSignatureSpan">(v1, v2, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.helpers.is">
+            function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>is
+            <span class="apidocSignatureSpan">(lvalue, rvalue, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.helpers.length">
+            function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>length
+            <span class="apidocSignatureSpan">(description)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.helpers.pathify">
+            function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>pathify
+            <span class="apidocSignatureSpan">(path, pathParams)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.helpers.printJSON">
+            function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>printJSON
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.helpers.setLen">
+            function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>setLen
+            <span class="apidocSignatureSpan">(descriptionLength)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swagger-test-templates.helpers.validateResponse">
+            function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>validateResponse
+            <span class="apidocSignatureSpan">(type, noSchema, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swagger-test-templates" id="apidoc.module.swagger-test-templates">module swagger-test-templates</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.testGen" id="apidoc.element.swagger-test-templates.testGen">
+        function <span class="apidocSignatureSpan">swagger-test-templates.</span>testGen
+        <span class="apidocSignatureSpan">(swagger, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function testGen(swagger, config) {
+  var paths = swagger.paths;
+  var targets = config.pathName;
+  var result = [];
+  var output = [];
+  var i = 0;
+  var source;
+  var filename;
+  var schemaTemp;
+  var environment;
+  var ndx = 0;
+
+  config.templatesPath = (config.templatesPath) ? config.templatesPath : path.join(__dirname, 'templates');
+
+  swagger = deref(swagger);
+  source = fs.readFileSync(path.join(config.templatesPath, '/schema.handlebars'), 'utf8');
+  schemaTemp = handlebars.compile(source, {noEscape: true});
+  handlebars.registerPartial('schema-partial', schemaTemp);
+  source = fs.readFileSync(path.join(config.templatesPath, '/environment.handlebars'), 'utf8');
+  environment = handlebars.compile(source, {noEscape: true});
+  helpers.setLen(80);
+
+  if (config.maxLen &amp;&amp; !isNaN(config.maxLen)) {
+    helpers.setLen(config.maxLen);
+  }
+
+  if (!targets || targets.length === 0) {
+    // builds tests for all paths in API
+    _.forEach(paths, function(apipath, pathName) {
+      result.push(testGenPath(swagger, pathName, config));
+    });
+  } else {
+    // loops over specified paths from config
+    _.forEach(targets, function(target) {
+      result.push(testGenPath(swagger, target, config));
+    });
+  }
+
+  // no specified paths to build, so build all of them
+  if (!targets || targets.length === 0) {
+    _.forEach(result, function(results) {
+      output.push({
+        name: '-test.js',
+        test: results
+      });
+    });
+
+    // build file names with paths
+    _.forEach(paths, function(apipath, pathName) {
+      // for output file name, replace / with -, and truncate the first /
+      // eg: /hello/world -&gt; hello-world
+      filename = sanitize((pathName.replace(/\//g, '-').substring(1))
+        + output[i].name);
+      // for base path file name, change it to base-path
+      if (pathName === '/') {
+        filename = 'base-path' + output[i].name;
+      }
+      output[i++].name = filename;
+    });
+  } else {
+    // loops over specified paths
+    _.forEach(targets, function(target) {
+      // for output file name, replace / with -, and truncate the first /
+      // eg: /hello/world -&gt; hello-world
+      filename = sanitize((target.replace(/\//g, '-').substring(1))
+        + '-test.js');
+      // for base path file name, change it to base-path
+      if (target === '/') {
+        filename = 'base-path' + '-test.js';
+      }
+      output.push({
+        name: filename,
+        test: result[ndx++]
+      });
+    });
+  }
+
+  if (swagger.securityDefinitions) {
+    var keys = Object.keys(swagger.securityDefinitions);
+
+    keys.forEach(function(element, index, array) {
+      array[index] = _.snakeCase(element).toUpperCase();
+    });
+    var data = {envVars: keys};
+    var envText = environment(data);
+
+    output.push({
+      name: '.env',
+      test: envText
+    });
+  }
+  return output;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  maxLen: 80,
+  pathParams: {
+    "id": "0123"
+  }
+};
+
+// Generates an array of JavaScript test files following specified configuration
+stt.<span class="apidocCodeKeywordSpan">testGen</span>(swagger, config);
+```
+
+## API
+
+`swagger-test-templates` module exports a function with following arguments and return values:
+
+### Arguments
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swagger-test-templates.helpers" id="apidoc.module.swagger-test-templates.helpers">module swagger-test-templates.helpers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.helpers.ifCond" id="apidoc.element.swagger-test-templates.helpers.ifCond">
+        function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>ifCond
+        <span class="apidocSignatureSpan">(v1, v2, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ifCond(v1, v2, options) {
+  if (arguments.length &lt; 3) {
+    throw new Error('Handlebars Helper \'ifCond\' needs 2 parameters');
+  }
+  if (v1.length &gt; 0 || v2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.helpers.is" id="apidoc.element.swagger-test-templates.helpers.is">
+        function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>is
+        <span class="apidocSignatureSpan">(lvalue, rvalue, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function is(lvalue, rvalue, options) {
+  if (arguments.length &lt; 3) {
+    throw new Error('Handlebars Helper \'is\' needs 2 parameters');
+  }
+
+  if (lvalue !== rvalue) {
+    return options.inverse(this);
+  } else {
+    return options.fn(this);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.helpers.length" id="apidoc.element.swagger-test-templates.helpers.length">
+        function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>length
+        <span class="apidocSignatureSpan">(description)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function length(description) {
+  if (arguments.length &lt; 2) {
+    throw new Error('Handlebar Helper \'length\'' +
+    ' needs 1 parameter');
+  }
+
+  if ((typeof description) !== 'string') {
+    throw new TypeError('Handlebars Helper \'length\'' +
+      'requires path to be a string');
+  }
+
+  if (len === -1) { // toggle off truncation, this is a noop
+    return description;
+  }
+
+  return strObj(description).truncate(len - 50).s;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.helpers.pathify" id="apidoc.element.swagger-test-templates.helpers.pathify">
+        function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>pathify
+        <span class="apidocSignatureSpan">(path, pathParams)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pathify(path, pathParams) {
+  var r;
+
+  if (arguments.length &lt; 3) {
+    throw new Error('Handlebars Helper \'pathify\'' +
+      ' needs 2 parameters');
+  }
+
+  if ((typeof path) !== 'string') {
+    throw new TypeError('Handlebars Helper \'pathify\'' +
+      'requires path to be a string');
+  }
+
+  if ((typeof pathParams) !== 'object') {
+    throw new TypeError('Handlebars Helper \'pathify\'' +
+      'requires pathParams to be an object');
+  }
+
+  if (Object.keys(pathParams).length &gt; 0) {
+    var re = new RegExp(/(?:\{+)(.*?(?=\}))(?:\}+)/g);
+    var re2;
+    var matches = [];
+    var m = re.exec(path);
+    var i;
+
+    while (m) {
+      matches.push(m[1]);
+      m = re.exec(path);
+    }
+
+    for (i = 0; i &lt; matches.length; i++) {
+      var match = matches[i];
+
+      re2 = new RegExp('(\\{+)' + match + '(?=\\})(\\}+)');
+
+      if (typeof (pathParams[match]) !== 'undefined' &amp;&amp; pathParams[match] !== null) {
+        path = path.replace(re2, pathParams[match]);
+      } else {
+        path = path.replace(re2, '{' + match + ' PARAM GOES HERE}');
+      }
+    }
+    return path;
+  }
+
+  r = new RegExp(/(?:\{+)(.*?(?=\}))(?:\}+)/g);
+  return path.replace(r, '{$1 PARAM GOES HERE}');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.helpers.printJSON" id="apidoc.element.swagger-test-templates.helpers.printJSON">
+        function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>printJSON
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function printJSON(data) {
+  if (arguments.length &lt; 2) {
+    throw new Error('Handlebar Helper \'printJSON\'' +
+    ' needs at least 1 parameter');
+  }
+
+  if (data !== null) {
+    if ((typeof data) === 'string') {
+      return '\'' + data + '\'';
+    } else if ((typeof data) === 'object') {
+      return '{\n'+prettyPrintJson(data, '        ')+'\n      }';
+    } else {
+      return data;
+    }
+  } else {
+    return null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.helpers.setLen" id="apidoc.element.swagger-test-templates.helpers.setLen">
+        function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>setLen
+        <span class="apidocSignatureSpan">(descriptionLength)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setLen(descriptionLength) {
+  len = descriptionLength
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+swagger = deref(swagger);
+source = fs.readFileSync(path.join(config.templatesPath, '/schema.handlebars'), 'utf8');
+schemaTemp = handlebars.compile(source, {noEscape: true});
+handlebars.registerPartial('schema-partial', schemaTemp);
+source = fs.readFileSync(path.join(config.templatesPath, '/environment.handlebars'), 'utf8');
+environment = handlebars.compile(source, {noEscape: true});
+helpers.<span class="apidocCodeKeywordSpan">setLen</span>(80);
+
+if (config.maxLen &amp;&amp; !isNaN(config.maxLen)) {
+  helpers.setLen(config.maxLen);
+}
+
+if (!targets || targets.length === 0) {
+  // builds tests for all paths in API
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swagger-test-templates.helpers.validateResponse" id="apidoc.element.swagger-test-templates.helpers.validateResponse">
+        function <span class="apidocSignatureSpan">swagger-test-templates.helpers.</span>validateResponse
+        <span class="apidocSignatureSpan">(type, noSchema, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateResponse(type, noSchema, options) {
+  if (arguments.length &lt; 3) {
+    throw new Error('Handlebars Helper \'validateResponse\'' +
+      'needs 2 parameters');
+  }
+
+  if (!noSchema &amp;&amp; type === TYPE_JSON) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
