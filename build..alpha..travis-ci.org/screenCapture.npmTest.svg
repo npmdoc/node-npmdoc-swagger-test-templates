@@ -1,13 +1,13 @@
-<svg height="2062" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2062" fill="#555" width="720"></rect>
+<svg height="2078" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2078" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
-<tspan x="10" y="42">&gt; npmdoc-swagger-test-templates@0.0.4 test /home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
+<tspan x="10" y="42">&gt; npmdoc-swagger-test-templates@0.0.5 test /home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
 <tspan x="10" y="58">mplates</tspan>
 <tspan x="10" y="74">&gt; (set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)</tspan>
 <tspan x="10" y="90"></tspan>
 <tspan x="10" y="106"></tspan>
-<tspan x="10" y="122">[MODE_BUILD=npmTest] - 2017-04-08T06:18:52Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
+<tspan x="10" y="122">[MODE_BUILD=npmTest] - 2017-04-08T06:20:26Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
 <tspan x="10" y="138">swagger-test-templates</tspan>
 <tspan x="10" y="154"></tspan>
 <tspan x="10" y="170"></tspan>
@@ -15,118 +15,119 @@
 <tspan x="10" y="202">c-swagger-test-templates/test.js</tspan>
 <tspan x="10" y="218">merging file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/test-repor\</tspan>
 <tspan x="10" y="234">t.json to test-report</tspan>
-<tspan x="10" y="250">&gt; server listening on http-port 40734</tspan>
+<tspan x="10" y="250">&gt; server listening on http-port 44950</tspan>
 <tspan x="10" y="266">created apidoc file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/api\</tspan>
 <tspan x="10" y="282">doc.html</tspan>
 <tspan x="10" y="298"></tspan>
 <tspan x="10" y="314"></tspan>
 <tspan x="10" y="330">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-swagger-test-tem\</tspan>
-<tspan x="10" y="346">plates/tmp/electron.15b4c3720aa0.0117b74dddbbb.html</tspan>
+<tspan x="10" y="346">plates/tmp/electron.15b4c3891ef0.630a67f28de93.html</tspan>
 <tspan x="10" y="362"></tspan>
 <tspan x="10" y="378">[node test-case 1 of 6 passed] - testCase_buildLib_default</tspan>
 <tspan x="10" y="394">[node test-case 2 of 6 passed] - testCase_buildReadme_default</tspan>
 <tspan x="10" y="410">[node test-case 3 of 6 passed] - testCase_buildTest_default</tspan>
 <tspan x="10" y="426"></tspan>
 <tspan x="10" y="442">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-swagger-test-tem\</tspan>
-<tspan x="10" y="458">plates/tmp/electron.15b4c3720f30.afec20983818.html</tspan>
+<tspan x="10" y="458">plates/tmp/electron.15b4c3892200.9c7fe162c933b.html</tspan>
 <tspan x="10" y="474"></tspan>
 <tspan x="10" y="490">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 <tspan x="10" y="506">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="522">&gt; server listening on http-port 54976</tspan>
-<tspan x="10" y="538">merging file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/test-repor\</tspan>
-<tspan x="10" y="554">t.json to test-report</tspan>
-<tspan x="10" y="570">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="586">[4761:0408/061854:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="602">[4761:0408/061854:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="618">[4794:0408/061854:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
-<tspan x="10" y="634">in process gpu-process. </tspan>
-<tspan x="10" y="650">merging file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/test-repor\</tspan>
-<tspan x="10" y="666">t.json to test-report</tspan>
-<tspan x="10" y="682">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="698">[4766:0408/061854:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="714">[4766:0408/061854:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="730">[4820:0408/061854:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
+<tspan x="10" y="522">merging file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/test-repor\</tspan>
+<tspan x="10" y="538">t.json to test-report</tspan>
+<tspan x="10" y="554">merging file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/test-repor\</tspan>
+<tspan x="10" y="570">t.json to test-report</tspan>
+<tspan x="10" y="586">&gt; Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="602">server listening on http-port 35085</tspan>
+<tspan x="10" y="618">[6146:0408/062028:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="634">[6146:0408/062028:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="650">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="666">[6142:0408/062028:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="682">[6142:0408/062028:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="698">[6172:0408/062028:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
+<tspan x="10" y="714">in process gpu-process. </tspan>
+<tspan x="10" y="730">[6195:0408/062028:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
 <tspan x="10" y="746">in process gpu-process. </tspan>
-<tspan x="10" y="762">[4766:0408/061854:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
-<tspan x="10" y="778"></tspan>
-<tspan x="10" y="794">browserTest - opened url /home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/\</tspan>
-<tspan x="10" y="810">apidoc.html</tspan>
+<tspan x="10" y="762">[6146:0408/062028:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
+<tspan x="10" y="778">[6142:0408/062028:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
+<tspan x="10" y="794"></tspan>
+<tspan x="10" y="810">browserTest - opened url http://127.0.0.1:44950?modeTest=1</tspan>
 <tspan x="10" y="826"></tspan>
 <tspan x="10" y="842"></tspan>
-<tspan x="10" y="858">browserTest - opened url http://127.0.0.1:40734?modeTest=1</tspan>
-<tspan x="10" y="874"></tspan>
-<tspan x="10" y="890">[4766:0408/061856:INFO:CONSOLE(248)] "----------|-----------|-----------|-----------|-----------\</tspan>
-<tspan x="10" y="906">|</tspan>
-<tspan x="10" y="922">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
-<tspan x="10" y="938">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="858">browserTest - opened url /home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/\</tspan>
+<tspan x="10" y="874">apidoc.html</tspan>
+<tspan x="10" y="890"></tspan>
+<tspan x="10" y="906">[6146:0408/062030:INFO:CONSOLE(248)] "----------|-----------|-----------|-----------|-----------\</tspan>
+<tspan x="10" y="922">|</tspan>
+<tspan x="10" y="938">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 <tspan x="10" y="954">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="970">All files |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="986">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1002">", source: file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/electron.15b4\</tspan>
-<tspan x="10" y="1018">c3720f30.afec20983818.html (248)</tspan>
-<tspan x="10" y="1034">[4766:0408/061856:INFO:CONSOLE(248)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
-<tspan x="10" y="1050">l", source: file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/electron.15b\</tspan>
-<tspan x="10" y="1066">4c3720f30.afec20983818.html (248)</tspan>
-<tspan x="10" y="1082">[node test-case 4 of 6 passed] - testCase_buildApp_default</tspan>
-<tspan x="10" y="1098"></tspan>
-<tspan x="10" y="1114">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
-<tspan x="10" y="1130">mplates/tmp/build/screenCapture.npmTest.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-\</tspan>
-<tspan x="10" y="1146">swagger-test-templates%2Ftmp%2Fbuild%2Fapidoc.html.png</tspan>
-<tspan x="10" y="1162"></tspan>
-<tspan x="10" y="1178">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
-<tspan x="10" y="1194">mplates/tmp/build/screenCapture.npmTest.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-\</tspan>
-<tspan x="10" y="1210">swagger-test-templates%2Ftmp%2Fbuild%2Fapidoc.html.html</tspan>
-<tspan x="10" y="1226"></tspan>
-<tspan x="10" y="1242">browserTest - exit-code 0 - /home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/bui\</tspan>
-<tspan x="10" y="1258">ld/apidoc.html</tspan>
-<tspan x="10" y="1274"></tspan>
-<tspan x="10" y="1290">[node test-case 5 of 6 passed] - testCase_buildApidoc_default</tspan>
-<tspan x="10" y="1306"></tspan>
-<tspan x="10" y="1322">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
-<tspan x="10" y="1338">mplates/tmp/build/screenCapture.npmTest.browser.%2F.png</tspan>
-<tspan x="10" y="1354"></tspan>
-<tspan x="10" y="1370">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
-<tspan x="10" y="1386">mplates/tmp/build/screenCapture.npmTest.browser.%2F.html</tspan>
-<tspan x="10" y="1402"></tspan>
-<tspan x="10" y="1418">browserTest - exit-code 0 - http://127.0.0.1:40734?modeTest=1</tspan>
-<tspan x="10" y="1434"></tspan>
+<tspan x="10" y="970">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="986">All files |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1002">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1018">", source: file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/electron.15b4\</tspan>
+<tspan x="10" y="1034">c3892200.9c7fe162c933b.html (248)</tspan>
+<tspan x="10" y="1050">[6146:0408/062030:INFO:CONSOLE(248)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
+<tspan x="10" y="1066">l", source: file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/electron.15b\</tspan>
+<tspan x="10" y="1082">4c3892200.9c7fe162c933b.html (248)</tspan>
+<tspan x="10" y="1098">[node test-case 4 of 6 passed] - testCase_buildApp_default</tspan>
+<tspan x="10" y="1114"></tspan>
+<tspan x="10" y="1130">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
+<tspan x="10" y="1146">mplates/tmp/build/screenCapture.npmTest.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-\</tspan>
+<tspan x="10" y="1162">swagger-test-templates%2Ftmp%2Fbuild%2Fapidoc.html.png</tspan>
+<tspan x="10" y="1178"></tspan>
+<tspan x="10" y="1194">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
+<tspan x="10" y="1210">mplates/tmp/build/screenCapture.npmTest.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-\</tspan>
+<tspan x="10" y="1226">swagger-test-templates%2Ftmp%2Fbuild%2Fapidoc.html.html</tspan>
+<tspan x="10" y="1242"></tspan>
+<tspan x="10" y="1258">browserTest - exit-code 0 - /home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/bui\</tspan>
+<tspan x="10" y="1274">ld/apidoc.html</tspan>
+<tspan x="10" y="1290"></tspan>
+<tspan x="10" y="1306">[node test-case 5 of 6 passed] - testCase_buildApidoc_default</tspan>
+<tspan x="10" y="1322"></tspan>
+<tspan x="10" y="1338">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
+<tspan x="10" y="1354">mplates/tmp/build/screenCapture.npmTest.browser.%2F.png</tspan>
+<tspan x="10" y="1370"></tspan>
+<tspan x="10" y="1386">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-te\</tspan>
+<tspan x="10" y="1402">mplates/tmp/build/screenCapture.npmTest.browser.%2F.html</tspan>
+<tspan x="10" y="1418"></tspan>
+<tspan x="10" y="1434">browserTest - exit-code 0 - http://127.0.0.1:44950?modeTest=1</tspan>
 <tspan x="10" y="1450"></tspan>
-<tspan x="10" y="1466">browserTest - merged coverage from /home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/\</tspan>
-<tspan x="10" y="1482">tmp/coverage.npmTest.browser.%2F.json</tspan>
-<tspan x="10" y="1498"></tspan>
+<tspan x="10" y="1466"></tspan>
+<tspan x="10" y="1482">browserTest - merged coverage from /home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/\</tspan>
+<tspan x="10" y="1498">tmp/coverage.npmTest.browser.%2F.json</tspan>
 <tspan x="10" y="1514"></tspan>
-<tspan x="10" y="1530">browserTest - merging test-report from /home/travis/build/npmdoc/node-npmdoc-swagger-test-templa\</tspan>
-<tspan x="10" y="1546">tes/tmp/test-report.npmTest.browser.%2F.json</tspan>
-<tspan x="10" y="1562"></tspan>
-<tspan x="10" y="1578">[node test-case 6 of 6 passed] - testCase_webpage_default</tspan>
-<tspan x="10" y="1594">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1610">File                                       |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
-<tspan x="10" y="1626">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1642">   node-npmdoc-swagger-test-templates/     |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="1658">      example.js                           |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="1674">      lib.npmdoc_swagger_test_templates.js |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="1690">      test.js                              |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="1706">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1722">All files                                  |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="1738">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1754"></tspan>
-<tspan x="10" y="1770">created coverage file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/c\</tspan>
-<tspan x="10" y="1786">overage.html/index.html</tspan>
-<tspan x="10" y="1802">merging file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/test-repor\</tspan>
-<tspan x="10" y="1818">t.json to test-report</tspan>
-<tspan x="10" y="1834"></tspan>
-<tspan x="10" y="1850">-------------------------------------------------------</tspan>
-<tspan x="10" y="1866">| test-report - buildNpmdoc - node - linux v6.10.2 - 2017-04-08T06:18:31.386Z</tspan>
-<tspan x="10" y="1882">|   36748 ms            0 failed        6 passed      |</tspan>
-<tspan x="10" y="1898">-------------------------------------------------------</tspan>
-<tspan x="10" y="1914"></tspan>
-<tspan x="10" y="1930">created test-report file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/buil\</tspan>
-<tspan x="10" y="1946">d/test-report.html</tspan>
-<tspan x="10" y="1962"></tspan>
+<tspan x="10" y="1530"></tspan>
+<tspan x="10" y="1546">browserTest - merging test-report from /home/travis/build/npmdoc/node-npmdoc-swagger-test-templa\</tspan>
+<tspan x="10" y="1562">tes/tmp/test-report.npmTest.browser.%2F.json</tspan>
+<tspan x="10" y="1578"></tspan>
+<tspan x="10" y="1594">[node test-case 6 of 6 passed] - testCase_webpage_default</tspan>
+<tspan x="10" y="1610">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1626">File                                       |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="1642">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1658">   node-npmdoc-swagger-test-templates/     |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1674">      example.js                           |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1690">      lib.npmdoc_swagger_test_templates.js |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1706">      test.js                              |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1722">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1738">All files                                  |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="1754">-------------------------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="1770"></tspan>
+<tspan x="10" y="1786">created coverage file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/c\</tspan>
+<tspan x="10" y="1802">overage.html/index.html</tspan>
+<tspan x="10" y="1818">merging file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/build/test-repor\</tspan>
+<tspan x="10" y="1834">t.json to test-report</tspan>
+<tspan x="10" y="1850"></tspan>
+<tspan x="10" y="1866">-------------------------------------------------------</tspan>
+<tspan x="10" y="1882">| test-report - buildNpmdoc - node - linux v6.10.2 - 2017-04-08T06:19:47.621Z</tspan>
+<tspan x="10" y="1898">|   54447 ms            0 failed        6 passed      |</tspan>
+<tspan x="10" y="1914">-------------------------------------------------------</tspan>
+<tspan x="10" y="1930"></tspan>
+<tspan x="10" y="1946">created test-report file:///home/travis/build/npmdoc/node-npmdoc-swagger-test-templates/tmp/buil\</tspan>
+<tspan x="10" y="1962">d/test-report.html</tspan>
 <tspan x="10" y="1978"></tspan>
-<tspan x="10" y="1994">npmTest - 0 failed tests</tspan>
-<tspan x="10" y="2010"></tspan>
+<tspan x="10" y="1994"></tspan>
+<tspan x="10" y="2010">npmTest - 0 failed tests</tspan>
 <tspan x="10" y="2026"></tspan>
-<tspan x="10" y="2042">[MODE_BUILD=npmTest] - 2017-04-08T06:19:11Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2042"></tspan>
+<tspan x="10" y="2058">[MODE_BUILD=npmTest] - 2017-04-08T06:20:45Z - EXIT_CODE - 0</tspan>
 </text>
 </svg>
